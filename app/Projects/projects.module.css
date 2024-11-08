@@ -1,0 +1,120 @@
+/* General Styles for Projects Page */
+.stepperContainer {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    font-size: 36px;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+/* Stepper Styles */
+.step {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.stepNumber {
+    background-color: #16a085;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: -60px;  /* Position the number to the left of the content */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.stepContent {
+    padding-left: 60px;  /* Give space for the number */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+}
+
+.projectTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.association {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.university {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.duration {
+    font-size: 14px;
+    color: #95a5a6;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #333;
+}
+
+.features {
+    margin: 10px 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.skills {
+    font-size: 14px;
+    color: #16a085;
+    font-weight: bold;
+}
+
+/* Hover Effect for the Step */
+.stepContent:hover {
+    background-color: #ecf0f1;
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .stepNumber {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .stepContent {
+        padding-left: 40px;  /* Adjust for smaller screen sizes */
+    }
+
+    .header {
+        font-size: 32px;
+    }
+
+    .projectTitle {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
