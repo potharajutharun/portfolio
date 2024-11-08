@@ -24,28 +24,44 @@ export default function Navbar() {
 
         {/* Right side: Navigation Links for Desktop */}
         <div className="hidden md:flex space-x-6">
-          <Link href="/about" className="text-xl font-semibold text-[#94a2b3] hover:text-white">
+          <Link
+            href="/about"
+            className="text-xl font-semibold text-[#94a2b3] hover:text-white"
+          >
             About Me
           </Link>
-          <Link href="/education" className="text-xl font-semibold text-[#94a2b3] hover:text-white">
+          <Link
+            href="/education"
+            className="text-xl font-semibold text-[#94a2b3] hover:text-white"
+          >
             Education
           </Link>
-          <Link href="/Projects" className="text-xl font-semibold text-[#94a2b3] hover:text-white">
+          <Link
+            href="/Projects"
+            className="text-xl font-semibold text-[#94a2b3] hover:text-white"
+          >
             Projects
           </Link>
-          <Link href="/experience" className="text-xl font-semibold text-[#94a2b3] hover:text-white">
+          <Link
+            href="/experience"
+            className="text-xl font-semibold text-[#94a2b3] hover:text-white"
+          >
             Experience
           </Link>
-          <Link href="/contact" className="text-xl font-semibold text-[#94a2b3] hover:text-white">
+          <Link
+            href="/contact"
+            className="text-xl font-semibold text-[#94a2b3] hover:text-white"
+          >
             Contact
           </Link>
-          <a
+          <Link
   href="https://drive.google.com/uc?export=download&id=1e-n-H-JEkr_SEDTKEonnZvicvsjYpyVZ"
   className="text-xl font-semibold text-[#94a2b3] hover:text-white border-2 border-[#94a2b3] py-2 px-4 rounded-md hover:bg-[#94a2b3] hover:text-white"
-  download
+  target="_blank" 
+  rel="noopener noreferrer"
 >
   Download CV
-</a>
+</Link>
 
         </div>
 
