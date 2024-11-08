@@ -40,7 +40,7 @@ export default function Navbar() {
             Contact
           </Link>
           <a
-            href="/TharunLatestResume.pdf"
+            href="https://drive.google.com/file/d/1e-n-H-JEkr_SEDTKEonnZvicvsjYpyVZ/view?usp=sharing"
             className="text-xl font-semibold text-[#94a2b3] hover:text-white border-2 border-[#94a2b3] py-2 px-4 rounded-md hover:bg-[#94a2b3] hover:text-white"
             download
           >
