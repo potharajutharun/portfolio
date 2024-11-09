@@ -2,8 +2,32 @@
 
 import { FaBuilding, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'; // For icons
 import Image from 'next/image'; // For image handling (Next.js Image component)
-
+import { useEffect, useState } from 'react';
 export default function Experience() {
+  const [duration, setDuration] = useState('');
+  useEffect(() => {
+    const calculateDuration = () => {
+      const startDate = new Date('2024-07-22'); // Start date: July 22, 2024
+      const currentDate = new Date(); // Get today's date
+
+      // Calculate the difference in milliseconds
+      const diffInMs = currentDate - startDate;
+
+      // Convert milliseconds to days
+      const daysInMs = 1000 * 60 * 60 * 24;
+      const totalDays = Math.floor(diffInMs / daysInMs);
+
+      // Calculate months and remaining days
+      const months = Math.floor(totalDays / 30); // Approximate 30 days per month
+      const remainingDays = totalDays % 30;
+
+      // Set the formatted result in state
+      setDuration(`${months} months and ${remainingDays} days`);
+    };
+
+    // Calculate the duration on component mount
+    calculateDuration();
+  }, []);
   return (
     <div className="max-w-7xl mx-auto p-6" style={{marginTop:'40px'}}>
       {/* Experience Section */}
@@ -35,7 +59,7 @@ export default function Experience() {
               </div>
               <div className="flex items-center text-lg text-gray-600 mb-2">
                 <FaCalendarAlt className="mr-2 text-gray-500" />
-                <span>Jul 2024 - Present · 5 months</span>
+                <span>{duration}</span>
               </div>
               <div className="flex items-center text-lg text-gray-600 mb-2">
                 <FaMapMarkerAlt className="mr-2 text-gray-500" />
