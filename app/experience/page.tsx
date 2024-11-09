@@ -16,7 +16,7 @@ export default function Experience() {
             {/* Company Logo */}
             <div className="w-16 h-16 rounded-full overflow-hidden mb-4 md:mb-0">
               <Image 
-                src="https://media.licdn.com/dms/image/v2/D560BAQH1EqKWjj3XaA/company-logo_200_200/company-logo_200_200/0/1700782355181?e=2147483647&v=beta&t=w4VIRwfQ0JSb5pXEpk1aqzTUGc_WHG32-0CjJpZjK7k" 
+                src="gcs.jpg" 
                 alt="Gaurav Consultancy Services Logo"
                 width={64}
                 height={64}
