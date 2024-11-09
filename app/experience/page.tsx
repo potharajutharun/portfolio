@@ -13,7 +13,7 @@ export default function Experience() {
       const currentDate = new Date(); // Get today's date
 
       // Calculate the difference in milliseconds
-      const diffInMs = currentDate - startDate;
+      const diffInMs = currentDate.getTime() - startDate.getTime();  // Use getTime() for valid date difference
 
       // Convert milliseconds to days
       const daysInMs = 1000 * 60 * 60 * 24;
