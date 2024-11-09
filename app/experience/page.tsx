@@ -45,23 +45,6 @@ export default function Experience() {
               <p className="mt-4 text-gray-600">
                 Currently working as a Jr Web Developer at Gaurav Consultancy Services (GCS), where I am gaining hands-on experience in front-end and back-end web development. I focus on technologies like HTML, CSS, JavaScript (JSX), and other modern web development practices.
               </p>
-
-              <div className="mt-4">
-                <strong>Skills:</strong>
-                <ul className="list-disc pl-6 mt-2 text-gray-600">
-                  <li>HTML</li>
-                  <li>CSS (Cascading Style Sheets)</li>
-                  <li>JavaScript eXtension (JSX)</li>
-                  <li>React.js</li>
-                  <li>Node.js</li>
-                  <li>MongoDB</li>
-                  <li>REST APIs</li>
-                  <li>Git & GitHub</li>
-                  <li>Responsive Web Design</li>
-                  <li>Version Control (Git)</li>
-                  <li>Agile Methodology</li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
