@@ -3,8 +3,10 @@
 import { FaBuilding, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'; // For icons
 import Image from 'next/image'; // For image handling (Next.js Image component)
 import { useEffect, useState } from 'react';
+
 export default function Experience() {
   const [duration, setDuration] = useState('');
+
   useEffect(() => {
     const calculateDuration = () => {
       const startDate = new Date('2024-07-22'); // Start date: July 22, 2024
@@ -28,8 +30,9 @@ export default function Experience() {
     // Calculate the duration on component mount
     calculateDuration();
   }, []);
+
   return (
-    <div className="max-w-7xl mx-auto p-6" style={{marginTop:'40px'}}>
+    <div className="max-w-7xl mx-auto p-6 mt-10">
       {/* Experience Section */}
       <div className="py-12">
         <h2 className="text-4xl font-semibold text-center mb-8">Experience</h2>
@@ -39,12 +42,12 @@ export default function Experience() {
           <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-6">
             {/* Company Logo */}
             <div className="w-16 h-16 rounded-full overflow-hidden mb-4 md:mb-0">
-              <Image 
-                src="gcs.jpg" 
+              <Image
+                src="/gcs.jpg" // Ensure the image is in the public folder
                 alt="Gaurav Consultancy Services Logo"
                 width={64}
                 height={64}
-                objectFit="cover"
+                className="object-cover"
               />
             </div>
 
