@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { text } from "stream/consumers";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,17 @@ export default function Navbar() {
         <div className="text-white text-2xl sm:text-4xl font-semibold">
           <Link href="/">Tharun Potharaju</Link>
         </div>
-      </div>
+       
+  
+  <a
+    href="/tharun.pdf"
+    download="Tharun_Potharaju_CV.pdf"
+    style={{color:'white',backgroundColor:'darkgreen', padding:'0.6rem', borderRadius:'10px'}}
+  >
+    Download CV
+  </a>
+</div>
+
     </nav>
   );
 }
