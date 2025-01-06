@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { text } from "stream/consumers";
 
 export default function Navbar() {
   return (

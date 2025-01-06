@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "../components/Navbar";
-import { FaLinkedin, FaGithub, FaInstagram, FaGitlab, FaRegUser, FaEnvelope, FaPhoneAlt, FaGraduationCap, FaProjectDiagram, FaBriefcase } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaInstagram, FaGitlab, FaRegUser, FaEnvelope, FaGraduationCap, FaProjectDiagram, FaBriefcase } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -89,7 +89,7 @@ export default function Home() {
             className="rounded-full mx-auto mb-4 animate__animated animate__zoomIn"
           />
           <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
-            🚀 As an aspiring Full-Stack Developer, I'm passionate about crafting innovative web applications that tackle real-world challenges. My skills span a variety of modern technologies, including HTML, CSS, TypeScript, Angular, SQL, JDBC, Spring Boot, and Bootstrap. I'm dedicated to creating responsive, user-friendly interfaces and robust, secure backends.
+            🚀 As an aspiring Full-Stack Developer, Im passionate about crafting innovative web applications that tackle real-world challenges. My skills span a variety of modern technologies, including HTML, CSS, TypeScript, Angular, SQL, JDBC, Spring Boot, and Bootstrap. Im dedicated to creating responsive, user-friendly interfaces and robust, secure backends.
             <br />
             <br />
             🎯 <b className="bg-warning">Professional Highlights:</b>
@@ -122,7 +122,7 @@ export default function Home() {
               <li>Problem-Solving & Algorithm Design: Strong analytical skills in problem-solving and designing efficient algorithms for better performance.</li>
             </ul>
             <br />
-            🤝 Let's connect and explore how we can work together to create amazing digital experiences!
+            🤝 Lets connect and explore how we can work together to create amazing digital experiences!
             <br />
             - Tharun Potharaju
           </p>
