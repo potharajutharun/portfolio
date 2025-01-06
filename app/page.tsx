@@ -24,7 +24,7 @@ export default function Home() {
       </div>
 
       {/* Main Content Section */}
-      <div className="mt-2">
+      <div className="mt-5">
         {/* Social Profiles Section */}
         <div className="flex justify-center space-x-6 lg:space-x-12 py-6 animate__animated animate__fadeIn animate__delay-1s">
           <a
