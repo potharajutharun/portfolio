@@ -81,7 +81,8 @@ export default function Portfolio() {
   };
 
   const skills = [
-    { name: "React Hooks", img: "/react.jpg" },
+    { name: "React", img: "/react.jpg" },
+    { name: "Redux", img: "/redux.png" },
     { name: "Prisma", img: "/prisma.png" },
     { name: "TypeScript", img: "/typescript.png" },
     { name: "JavaScript", img: "/javascript.png" },
@@ -92,6 +93,7 @@ export default function Portfolio() {
     { name: "Java", img: "/java.png" },
     { name: "MERN Stack", img: "/mern.avif" },
     { name: "Responsive Design", img: "/responsive.png" },
+    { name: "Data Structures", img: "/ds.webp" },
   ];
 
   const projects = [
@@ -207,7 +209,7 @@ export default function Portfolio() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="bg-[#252525] p-4 rounded-lg shadow-lg hover:bg-pink-900 transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
+              className="bg-[#252525] p-4 ms-2 rounded-lg shadow-lg hover:bg-pink-900 transition-all duration-300 hover:-translate-y-1 animate-fade-in-up"
             >
               <Image
                 src={skill.img}
@@ -254,9 +256,11 @@ export default function Portfolio() {
           <FaBriefcase /> Experience
         </h2>
         <div className="max-w-3xl mx-auto space-y-8">
+          
           <div className="bg-[#252525] p-6 rounded-lg shadow-lg animate-fade-in-up">
+        
             <h3 className="text-xl font-semibold text-pink-400">Jr. Web Developer</h3>
-            <p className="text-gray-300">Gaurav Consultancy Services, Hyderabad</p>
+            <p className="text-gray-300">Techno Communications LLC, Hyderabad</p>
             <p className="text-sm text-gray-500">July 2024 - Present (9 months)</p>
             <p className="mt-2 text-gray-300">Developing web solutions at GCS.</p>
           </div>
@@ -316,7 +320,17 @@ export default function Portfolio() {
             <a href={contactInfo.linkedin} target="_blank" className="text-pink-400 hover:underline transition-colors duration-300">LinkedIn Profile</a>
           </p>
         </div>
+       
       </section>
+      <footer>
+      <div className="footer-content d-flex justify-center  text-center align-items-center mt-2 card shadow-md">
+        <p>&copy; 2025 Tharun potharaju. All rights reserved.</p>
+        <p>
+          <a href="/terms">Terms of Service</a> | <a href="/privacy">Privacy Policy , </a>
+           Made with 💕 from Tharun potharaju
+        </p>
+      </div>
+      </footer>
     </div>
   );
 }
