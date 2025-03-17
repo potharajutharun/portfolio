@@ -118,16 +118,14 @@ export default function Portfolio() {
   const certifications = ["Python", "Java Full Stack Developer", "Core Java", "SQL", "MERN Stack Developer"];
 
   useEffect(() => {
-    const handleScroll = (e) => {
+    const handleScroll = (e: Event) => {
       e.preventDefault();
-      const targetId = e.currentTarget.getAttribute("href").substring(1);
-      const targetElement = document.getElementById(targetId);
-      targetElement?.scrollIntoView({ behavior: "smooth" });
+      const targetId = (e.currentTarget as HTMLAnchorElement).getAttribute("href")?.substring(1);
+      const targetElement = document.getElementById(targetId || '');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
     };
-
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", handleScroll);
-    });
 
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
