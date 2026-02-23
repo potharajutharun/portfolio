@@ -1,11 +1,14 @@
-// app/layout.tsx or app/layout.js
-import './globals.css';
-import { ReactNode } from 'react';
-import Head from 'next/head'; // Import next/head for managing head elements
+import type { Metadata } from "next";
+import { ReactNode } from "react";
+import "./globals.css";
 
-export const metadata = {
-  title: "Tharun Potharaju | Portfolio",
-  description: "Portfolio of Tharun Potharaju, a Jr. Web Developer.",
+export const metadata: Metadata = {
+  title: "Tharun Potharaju | Full-Stack Software Engineer",
+  description:
+    "Portfolio of Tharun Potharaju, a Full-Stack Software Engineer building production React and Node.js systems.",
+  icons: {
+    icon: "/men.png",
+  },
 };
 
 interface RootLayoutProps {
@@ -15,11 +18,6 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <Head>
-        {/* Add the favicon and other global meta tags */}
-        <link rel="icon" href="/men.png" type="image/png" />
-        <meta name="theme-color" content="#ffffff" />
-      </Head>
       <body>{children}</body>
     </html>
   );
