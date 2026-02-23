@@ -116,11 +116,10 @@ export const projects: Project[] = [
   },
   {
     title: "Admin Portal",
-    subtitle: "Live Project",
-    tech: ["Admin Panel", "Authentication"],
+    subtitle: "In Progress · Full Stack · Work in Progress",
+    tech: ["React", "Node.js", "Admin Dashboard", "Authentication"],
     highlights: [
-      "Live admin authentication portal deployment.",
-      "Added direct access link in projects section.",
+      "Centralized admin portal being built to manage and monitor all personal projects from one place. Features authentication, dashboard access controls and modular design to support future project integrations.",
     ],
     liveUrl: "https://adminportal-2r3x.vercel.app/auth/login",
   },
@@ -136,21 +135,19 @@ export const projects: Project[] = [
   },
   {
     title: "HUmen Nalanda Task",
-    subtitle: "GitHub Project",
-    tech: ["JavaScript", "Task Project"],
+    subtitle: "Backend Project · Node.js",
+    tech: ["Node.js", "Express", "REST API", "Backend"],
     highlights: [
-      "Source code repository hosted on GitHub.",
-      "Included directly in portfolio for code review.",
+      "Backend service built for a bookkeeping admin system. Handles data management and business logic for administrative operations. Built with Node.js — source code available on GitHub.",
     ],
     repoUrl: "https://github.com/potharajutharun/HUmen-_nalanda_Task",
   },
   {
     title: "Auth Service",
-    subtitle: "GitHub Project",
-    tech: ["Node.js", "Authentication", "Backend"],
+    subtitle: "In Progress · Microservice · Work in Progress",
+    tech: ["Node.js", "JWT", "Microservices", "REST API"],
     highlights: [
-      "Authentication service repository for backend auth workflows.",
-      "Added for recruiter visibility into service-level backend code.",
+      "Authentication microservice designed to handle user registration, login and token management across multiple personal projects. Built as a standalone service so future projects can plug into it without rebuilding auth from scratch. Work in progress.",
     ],
     repoUrl: "https://github.com/potharajutharun/auth_service",
   },
